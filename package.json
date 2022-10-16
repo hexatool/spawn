@@ -1,0 +1,50 @@
+{
+  	"name": "@hexatool/spawn",
+  	"version": "1.0.0",
+  	"description": "Take care of your `spawn()`",
+  	"keywords": [
+  	  	"spawn",
+  	  	"child",
+  	  	"process",
+  	  	"promise",
+  	  	"async",
+  	  	"cross-spawn"
+  	],
+  	"homepage": "https://github.com/hexatool/spawn",
+  	"bugs": {
+  	  	"url": "https://github.com/hexatool/spawn/issues"
+  	},
+  	"repository": {
+  	  	"type": "git",
+  	  	"url": "https://github.com/hexatool/spawn"
+  	},
+  	"author": "MarioMH8",
+  	"license": "MIT",
+  	"scripts": {
+  	  	"lint": "eslint .",
+  	  	"lint:fix": "eslint --fix ."
+  	},
+  	"dependencies": {
+  	  	"cross-spawn": "7.0.3",
+  	  	"signal-exit": "3.0.7"
+  	},
+  	"devDependencies": {
+  	  	"@hexatool/eslint-config-typescript": "1.0.0",
+  	  	"@hexatool/tsconfig": "1.0.0",
+  	  	"eslint": "8.25.0",
+  	  	"typescript": "4.8.4"
+  	},
+  	"engines": {
+  	  	"node": ">=16"
+  	},
+  	"volta": {
+  	  	"node": "16.18.0",
+  	  	"yarn": "1.22.19"
+  	},
+  	"packageManager": "yarn@3.2.4",
+  	"dependenciesMeta": {
+  	  	"@hexatool/tsconfig@1.0.0": {
+  	  	  	"unplugged": true
+  	  	}
+  	}
+}
