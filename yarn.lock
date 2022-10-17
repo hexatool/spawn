@@ -361,7 +361,7 @@ __metadata:
     "@types/cross-spawn": 6.0.2
     "@types/node": 18.11.0
     "@types/signal-exit": 3.0.1
-    "@vitest/coverage-c8": ^0.24.3
+    "@vitest/coverage-c8": 0.24.3
     cross-spawn: 7.0.3
     eslint: 8.25.0
     signal-exit: 3.0.7
@@ -703,7 +703,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/coverage-c8@npm:^0.24.3":
+"@vitest/coverage-c8@npm:0.24.3":
   version: 0.24.3
   resolution: "@vitest/coverage-c8@npm:0.24.3"
   dependencies:
