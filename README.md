@@ -28,20 +28,6 @@
         console.log(code === 0 ? 'success' : 'error');
     }
    ```
-   or yu can chain `on` calls
-   ```typescript
-    import spawn from '@hexatool/spawn';
-
-    async function main() {
-        const child = await spawn('npm', ['install', '@hexatool/spawn'])
-            .on('stdout', data => console.log(data.toString()))
-            .on('stderr', data => console.error(data.toString()));
-    
-        let { code, stdout, stderr } = child;
-    
-        console.log(code === 0 ? 'success' : 'error');
-    }
-   ```
 
 ## What it does
 
