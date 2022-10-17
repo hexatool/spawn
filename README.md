@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Take care of your `spawn()`
+  Take care of your spawn()
 </p>
 
 ## How to use
