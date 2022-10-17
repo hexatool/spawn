@@ -1,3 +1,4 @@
 {
-	"extends": ".yarn/unplugged/@hexatool-tsconfig-npm-1.0.0-003c79f3c8/node_modules/@hexatool/tsconfig/tsconfig.json"
+	"extends": "@hexatool/tsconfig",
+	"exclude": ["dist"]
 }
