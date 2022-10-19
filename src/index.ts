@@ -3,6 +3,7 @@ import type { ChildProcess, SpawnOptions } from 'node:child_process';
 
 import crossSpawn from 'cross-spawn';
 import onExit from 'signal-exit';
+
 import ChildProcessPromise from './promise';
 
 const activeProcesses = new Set<ChildProcess>();
@@ -16,7 +17,7 @@ onExit(() => {
 export default function spawn(
 	cmd: string,
 	args: string[] = [],
-	opts?: SpawnOptions,
+	opts?: SpawnOptions
 ): ChildProcessPromise {
 	return new ChildProcessPromise((resolve, reject, events) => {
 		const child = crossSpawn(cmd, args, opts);
@@ -46,7 +47,7 @@ export default function spawn(
 
 		child.on('close', code => {
 			activeProcesses.delete(child);
-			resolve({code, stdout, stderr});
+			resolve({ code, stdout, stderr });
 		});
 	});
 }
