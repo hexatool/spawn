@@ -1,5 +1,5 @@
 import { resolve } from 'node:path';
-import { defineConfig } from 'vite';
+import { defineConfig, UserConfig } from 'vite';
 
 export default defineConfig({
 	build: {
@@ -28,4 +28,4 @@ export default defineConfig({
 			exclude: ['spec/**/*']
 		}
 	}
-});
+} as UserConfig);
