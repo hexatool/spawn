@@ -45,7 +45,7 @@
   	  	"signal-exit": "3.0.7"
   	},
   	"devDependencies": {
-  	  	"@hexatool/eslint-config-typescript": "1.0.0",
+  	  	"@hexatool/eslint-config-typescript": "1.0.1",
   	  	"@hexatool/fixtures": "1.0.7",
   	  	"@hexatool/tsconfig": "18.0.0",
   	  	"@types/cross-spawn": "6.0.2",
