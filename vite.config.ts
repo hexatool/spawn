@@ -1,31 +1,26 @@
 import { resolve } from 'node:path';
-import { defineConfig, UserConfig } from 'vite';
+
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+import tsconfigPaths from 'vite-tsconfig-paths';
+
+import externalize from './vite.plugin.external';
 
 export default defineConfig({
 	build: {
-		target: "ESNext",
+		target: 'ESNext',
 		lib: {
-			formats: ["es"],
-			fileName: (format) => `hexatool-spawn.${format === "es" ? "mjs" : "cjs"}`,
+			formats: ['es'],
+			fileName: format => `hexatool-spawn.${format === 'es' ? 'mjs' : 'cjs'}`,
 			entry: resolve(__dirname, 'src/index.ts'),
 		},
-		sourcemap: true,
-		rollupOptions: {
-			external: [
-				"cross-spawn",
-				"signal-exit",
-				"node:buffer",
-				"node:child_process",
-				"node:events",
-			],
-			output: {
-				exports: "named"
-			}
-		},
+		minify: false,
+		sourcemap: false,
 	},
+	plugins: [dts({ rollupTypes: true }), externalize(), tsconfigPaths()],
 	test: {
 		coverage: {
-			exclude: ['spec/**/*']
-		}
-	}
-} as UserConfig);
+			exclude: ['spec/**/*'],
+		},
+	},
+});

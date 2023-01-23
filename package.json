@@ -24,45 +24,50 @@
   	"files": [
   	  	"dist"
   	],
-  	"main": "dist/hexatool-spawn.cjs",
   	"module": "dist/hexatool-spawn.mjs",
   	"types": "dist/hexatool-spawn.d.ts",
   	"exports": {
-  	  	".": "./dist/hexatool-spawn.mjs"
+  	  	".": {
+  	  	  	"default": "./dist/hexatool-spawn.mjs",
+  	  	  	"types": "./dist/hexatool-spawn.d.ts"
+  	  	}
   	},
   	"scripts": {
-  	  	"build": "$npm_execpath run build:code & $npm_execpath run build:definitions",
-  	  	"build:code": "vite build",
-  	  	"build:definitions": "tsc --project tsconfig.build.json",
+  	  	"build": "vite build",
   	  	"lint": "eslint .",
   	  	"lint:fix": "eslint --fix .",
+  	  	"publish": "changeset publish",
   	  	"test": "vitest --no-isolate",
   	  	"test:coverage": "vitest run --no-isolate --coverage",
-  	  	"typecheck": "tsc --noEmit"
+  	  	"typecheck": "tsc --noEmit",
+  	  	"version": "changeset version"
   	},
   	"dependencies": {
   	  	"cross-spawn": "7.0.3",
   	  	"signal-exit": "3.0.7"
   	},
   	"devDependencies": {
-  	  	"@hexatool/eslint-config-typescript": "1.0.0",
-  	  	"@hexatool/fixtures": "1.0.7",
+  	  	"@changesets/cli": "2.26.0",
+  	  	"@hexatool/eslint-config-typescript": "1.0.3",
+  	  	"@hexatool/fixtures": "1.0.10",
   	  	"@hexatool/tsconfig": "18.0.0",
   	  	"@types/cross-spawn": "6.0.2",
-  	  	"@types/node": "18.11.7",
+  	  	"@types/node": "18.11.18",
   	  	"@types/signal-exit": "3.0.1",
-  	  	"@vitest/coverage-c8": "0.24.3",
-  	  	"eslint": "8.26.0",
-  	  	"typescript": "4.8.4",
-  	  	"vite": "3.2.0",
-  	  	"vitest": "0.24.3"
-  	},
-  	"volta": {
-  	  	"node": "18.12.0",
-  	  	"yarn": "1.22.19"
+  	  	"@vitest/coverage-c8": "0.28.1",
+  	  	"eslint": "8.32.0",
+  	  	"typescript": "4.9.4",
+  	  	"vite": "4.0.4",
+  	  	"vite-plugin-dts": "1.7.1",
+  	  	"vite-tsconfig-paths": "4.0.5",
+  	  	"vitest": "0.27.3"
   	},
   	"engines": {
   	  	"node": ">=12"
   	},
-  	"packageManager": "yarn@3.2.4"
+  	"volta": {
+  	  	"node": "18.13.0",
+  	  	"yarn": "3.3.1"
+  	},
+  	"packageManager": "yarn@3.3.1"
 }

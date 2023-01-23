@@ -3,16 +3,16 @@ import EventEmitter from 'node:events';
 
 export type SpawnResult = {
 	code?: number | null;
-	stdout: Buffer;
 	stderr: Buffer;
+	stdout: Buffer;
 };
 
 type EventNames = 'stderr' | 'stdout';
 
 type Resolve<T> = (value: Promise<T> | T) => void;
-type Reject = (reason?: any) => void;
+type Reject = (reason: Error) => void;
 type Executor<T> = (resolve: Resolve<T>, reject: Reject, event: EventEmitter) => void;
-type Listener = (...args: any[]) => void;
+type Listener = (buffer: Buffer) => void;
 
 export default class ChildProcessPromise extends Promise<SpawnResult> {
 	private readonly ee: EventEmitter;
