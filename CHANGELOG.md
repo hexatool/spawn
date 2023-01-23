@@ -4,7 +4,7 @@
 
 ### Patch Changes
 
-- ef9a233: Corregir docuemntación
+- ef9a233: Fix docs
 
 ## 1.0.1
 
