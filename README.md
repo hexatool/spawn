@@ -3,31 +3,20 @@
 </h1>
 
 <p align="center">
-  Take care of your spawn()
+  Take care of your <code>spawn()</code>
 </p>
 
-## How to use
+## Installation
 
-1. Install the dependency
-   ```bash
-   npm install --save-dev @hexatool/spawn
-   ```
+```bash
+npm install --save-dev @hexatool/spawn
+```
 
-2. Install the dependency
-   ```typescript
-    import spawn from '@hexatool/spawn';
+**Using yarn**
 
-    async function main() {
-        const child = spawn('npm', ['install', '@hexatool/spawn']);
-    
-        child.on('stdout', data => console.log(data.toString()));
-        child.on('stderr', data => console.error(data.toString()));
-    
-        let { code, stdout, stderr } = await child;
-    
-        console.log(code === 0 ? 'success' : 'error');
-    }
-   ```
+```bash
+yarn add @hexatool/spawn -dev
+```
 
 ## What it does
 
@@ -36,6 +25,23 @@
 - Emits `stdout` and `stderr` events
 - Exposes al methods of `NodeJS.EventEmitter`
 - Automatically kills all spawn processes when parent process dies
+
+## How to use
+
+```typescript
+import spawn from '@hexatool/spawn';
+
+async function main() {
+   const child = spawn('npm', ['install', '@hexatool/spawn']);
+   
+   child.on('stdout', data => console.log(data.toString()));
+   child.on('stderr', data => console.error(data.toString()));
+   
+   let { code, stdout, stderr } = await child;
+   
+   console.log(code === 0 ? 'success' : 'error');
+}
+```
 
 ## Hexatool Code Quality Standards
 
