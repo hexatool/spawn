@@ -1,5 +1,11 @@
 # @hexatool/spawn
 
+## 1.0.2
+
+### Patch Changes
+
+- ef9a233: Fix docs
+
 ## 1.0.1
 
 ### Patch Changes
