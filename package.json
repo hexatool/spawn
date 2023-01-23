@@ -1,73 +1,73 @@
 {
-  	"name": "@hexatool/spawn",
-  	"version": "1.0.0",
-  	"description": "Take care of your `spawn()`",
-  	"keywords": [
-  	  	"spawn",
-  	  	"child",
-  	  	"process",
-  	  	"promise",
-  	  	"async",
-  	  	"cross-spawn"
-  	],
-  	"homepage": "https://github.com/hexatool/spawn",
-  	"bugs": {
-  	  	"url": "https://github.com/hexatool/spawn/issues"
-  	},
-  	"repository": {
-  	  	"type": "git",
-  	  	"url": "https://github.com/hexatool/spawn"
-  	},
-  	"author": "MarioMH8",
-  	"license": "MIT",
-  	"type": "module",
-  	"files": [
-  	  	"dist"
-  	],
-  	"module": "dist/hexatool-spawn.mjs",
-  	"types": "dist/hexatool-spawn.d.ts",
-  	"exports": {
-  	  	".": {
-  	  	  	"default": "./dist/hexatool-spawn.mjs",
-  	  	  	"types": "./dist/hexatool-spawn.d.ts"
-  	  	}
-  	},
-  	"scripts": {
-  	  	"build": "vite build",
-  	  	"lint": "eslint .",
-  	  	"lint:fix": "eslint --fix .",
-  	  	"publish": "changeset publish",
-  	  	"test": "vitest --no-isolate",
-  	  	"test:coverage": "vitest run --no-isolate --coverage",
-  	  	"typecheck": "tsc --noEmit",
-  	  	"version": "changeset version"
-  	},
-  	"dependencies": {
-  	  	"cross-spawn": "7.0.3",
-  	  	"signal-exit": "3.0.7"
-  	},
-  	"devDependencies": {
-  	  	"@changesets/cli": "2.26.0",
-  	  	"@hexatool/eslint-config-typescript": "1.0.3",
-  	  	"@hexatool/fixtures": "1.0.10",
-  	  	"@hexatool/tsconfig": "18.0.0",
-  	  	"@types/cross-spawn": "6.0.2",
-  	  	"@types/node": "18.11.18",
-  	  	"@types/signal-exit": "3.0.1",
-  	  	"@vitest/coverage-c8": "0.28.1",
-  	  	"eslint": "8.32.0",
-  	  	"typescript": "4.9.4",
-  	  	"vite": "4.0.4",
-  	  	"vite-plugin-dts": "1.7.1",
-  	  	"vite-tsconfig-paths": "4.0.5",
-  	  	"vitest": "0.28.1"
-  	},
-  	"engines": {
-  	  	"node": ">=12"
-  	},
-  	"volta": {
-  	  	"node": "18.13.0",
-  	  	"yarn": "3.3.1"
-  	},
-  	"packageManager": "yarn@3.3.1"
+  "name": "@hexatool/spawn",
+  "version": "1.0.1",
+  "description": "Take care of your `spawn()`",
+  "keywords": [
+    "spawn",
+    "child",
+    "process",
+    "promise",
+    "async",
+    "cross-spawn"
+  ],
+  "homepage": "https://github.com/hexatool/spawn",
+  "bugs": {
+    "url": "https://github.com/hexatool/spawn/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexatool/spawn"
+  },
+  "author": "MarioMH8",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/hexatool-spawn.mjs",
+  "types": "dist/hexatool-spawn.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/hexatool-spawn.mjs",
+      "types": "./dist/hexatool-spawn.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "publish": "changeset publish",
+    "test": "vitest --no-isolate",
+    "test:coverage": "vitest run --no-isolate --coverage",
+    "typecheck": "tsc --noEmit",
+    "version": "changeset version"
+  },
+  "dependencies": {
+    "cross-spawn": "7.0.3",
+    "signal-exit": "3.0.7"
+  },
+  "devDependencies": {
+    "@changesets/cli": "2.26.0",
+    "@hexatool/eslint-config-typescript": "1.0.3",
+    "@hexatool/fixtures": "1.0.10",
+    "@hexatool/tsconfig": "18.0.0",
+    "@types/cross-spawn": "6.0.2",
+    "@types/node": "18.11.18",
+    "@types/signal-exit": "3.0.1",
+    "@vitest/coverage-c8": "0.28.1",
+    "eslint": "8.32.0",
+    "typescript": "4.9.4",
+    "vite": "4.0.4",
+    "vite-plugin-dts": "1.7.1",
+    "vite-tsconfig-paths": "4.0.5",
+    "vitest": "0.28.1"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "volta": {
+    "node": "18.13.0",
+    "yarn": "3.3.1"
+  },
+  "packageManager": "yarn@3.3.1"
 }
