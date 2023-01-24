@@ -751,9 +751,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hexatool/fixtures@npm:1.0.10":
-  version: 1.0.10
-  resolution: "@hexatool/fixtures@npm:1.0.10"
+"@hexatool/fixtures@npm:1.0.11":
+  version: 1.0.11
+  resolution: "@hexatool/fixtures@npm:1.0.11"
   dependencies:
     "@hexatool/fs-copy": 0.0.1-next.3
     "@hexatool/fs-remove": 0.0.1-next.3
@@ -762,7 +762,7 @@ __metadata:
     fdir: 5.3.0
     picomatch: 2.3.1
     signal-exit: 3.0.7
-  checksum: a7e23287508b7a2001f0f170ec266035adbe16a316fc2799e30cb1f839734c9b15d823024c2a3e3a3a7fb9d6073fcb9532760a4d0073525166c299fc5533a6ab
+  checksum: f7c8c1e97be7f1836a8c8906e6ce3a8f26cb498d53eac88e1e0cf3c3a0e79866887223e2e0cf07607ad37b05b5edd5e45b4158a16c39e98e7f5cd893d710f319
   languageName: node
   linkType: hard
 
@@ -842,7 +842,7 @@ __metadata:
   dependencies:
     "@changesets/cli": 2.26.0
     "@hexatool/eslint-config-typescript": 1.0.3
-    "@hexatool/fixtures": 1.0.10
+    "@hexatool/fixtures": 1.0.11
     "@hexatool/tsconfig": 18.0.0
     "@types/cross-spawn": 6.0.2
     "@types/node": 18.11.18
