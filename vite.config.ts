@@ -3,8 +3,7 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 import tsconfigPaths from 'vite-tsconfig-paths';
-
-import externalize from './vite.plugin.external';
+import { externalizeDeps } from 'vite-plugin-externalize-deps';
 
 export default defineConfig({
 	build: {
@@ -17,7 +16,7 @@ export default defineConfig({
 		minify: false,
 		sourcemap: false,
 	},
-	plugins: [dts({ rollupTypes: true }), externalize(), tsconfigPaths()],
+	plugins: [dts({ rollupTypes: true }), externalizeDeps(), tsconfigPaths()],
 	test: {
 		coverage: {
 			exclude: ['spec/**/*'],
