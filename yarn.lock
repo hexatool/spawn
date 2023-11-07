@@ -990,7 +990,7 @@ __metadata:
     "@hexatool/tsconfig": 18.0.0
     "@types/cross-spawn": 6.0.5
     "@types/node": 18.18.8
-    "@types/signal-exit": 3.0.3
+    "@types/signal-exit": 3.0.4
     "@vitest/coverage-c8": 0.33.0
     cross-spawn: 7.0.3
     eslint: 8.53.0
@@ -1527,10 +1527,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/signal-exit@npm:3.0.3":
-  version: 3.0.3
-  resolution: "@types/signal-exit@npm:3.0.3"
-  checksum: fb835fb8e66b38e24d6033b6ca239c68944553be81b15689ec0409616fe380647fe3b229930c7ecfe90d2cb80607e05d2bff819c989941a1278df0c9276a44db
+"@types/signal-exit@npm:3.0.4":
+  version: 3.0.4
+  resolution: "@types/signal-exit@npm:3.0.4"
+  checksum: bda4fd411f828b09ab65902cb0edc1d0004e1d2803e0d70d3a02970698ae52c3df58adc2051f5a763e915fb00c1452c4678118f0a009d7d4083770b67c4f6201
   languageName: node
   linkType: hard
 
