@@ -988,7 +988,7 @@ __metadata:
     "@hexatool/fixtures": 1.0.11
     "@hexatool/tsconfig": 18.0.0
     "@types/cross-spawn": 6.0.6
-    "@types/node": 18.19.2
+    "@types/node": 20.11.30
     "@types/signal-exit": 3.0.4
     "@vitest/coverage-c8": 0.33.0
     cross-spawn: 7.0.3
@@ -1487,12 +1487,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.2":
-  version: 18.19.2
-  resolution: "@types/node@npm:18.19.2"
+"@types/node@npm:20.11.30":
+  version: 20.11.30
+  resolution: "@types/node@npm:20.11.30"
   dependencies:
     undici-types: ~5.26.4
-  checksum: 6ae1e456f469bd50cac55d01ec17cddca3e60a1ae8cf6a95c8f2c49668ac358fd68d53af32076e37418f3b07cf6d2b245a48e3b77998ac51cc6a797d9d1a4367
+  checksum: 7597767aa3e44b0f1bf62efa522dd17741135f283c11de6a20ead8bb7016fb4999cc30adcd8f2bb29ebb216906c92894346ccd187de170927dc1e212d2c07c81
   languageName: node
   linkType: hard
 
